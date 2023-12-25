@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- ===========bootstrap=========== -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- ===========bootstrap=========== -->
+    <title>Login</title>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <section class="d-flex flex-column align-items-center p-4 shadow-sm rounded-4 border border-primary border-opacity-25 login">
+        <h1 class="text-primary mb-5 mt-4">Smart Login System</h1>
+        <form class="w-100" method="POST">
+            <div class="mb-4">
+                <input type="email" name="email" class="form-control" placeholder="Enter your email"
+                    aria-describedby="validationServer05Feedback" />
+                <div id="validationServer05Feedback" class="invalid-feedback invalid-email">
+                    Worng Email, try anthor email!
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="password" name="password" class="form-control" placeholder="Enter your passsword"
+                    aria-describedby="validationServer05Feedback" />
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    Worng Password, try anthor password!
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 rounded-1 mb-3">Login</button>
+            <p class="text-center text-dark">if you don't have an acount? <a href="signin.html">Signin Here</a></p>
+        </form>
+    </section>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

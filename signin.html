@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- ===========bootstrap=========== -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- ===========bootstrap=========== -->
+    <title>Signin</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+    <section class="d-flex flex-column align-items-center border border-primary border-opacity-25 px-4 shadow-sm rounded-4 signin">
+        <h1 class="text-primary mb-5 mt-4">Smart Login System</h1>
+        <form class="w-100" method="POST">
+            <div class="mb-4">
+                <input type="name" name="name" class="form-control" placeholder="Enter your name"
+                    aria-describedby="validationServer05Feedback" />
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    user name should be at least 3 chars!
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="email" name="email" class="form-control" placeholder="Enter your email"
+                    aria-describedby="validationServer05Feedback" />
+                <div id="validationServer05Feedback" class="invalid-feedback invalid-email">
+                    you should write a valid email!
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="password" name="password" class="form-control" placeholder="Enter your passsword"
+                    aria-describedby="validationServer05Feedback" />
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    password should contains at least 3 digits, at least 2 chars and length should be from 5 to 15!
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="tel" name="phone" class="form-control" placeholder="Enter your phone"
+                    aria-describedby="validationServer05Feedback" />
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    you shold write a valid phone number!
+                </div>
+            </div>
+
+            <button class="btn btn-primary mb-4 rounded-1 img-file" type="button">
+                <label for="profile-img">Profile Image &#128247;</label>
+                <input type="file" class="form-control d-none" id="profile-img"/>
+            </button>
+
+            <div class="d-flex mb-4">
+                <span class="text-dark">Gender:</span>
+                <div class="ms-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label text-secondary" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label text-secondary" for="female">
+                            Female
+                        </label>
+                    </div>
+                    <div class="invalid-feedback d-none" id="invalid-radio">you should choose one of two types of gender!</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-1 mb-3">Signin</button>
+            <p class="text-center text-dark">if you allready have an acount? <a href="index.html">Login Here</a></p>
+        </form>
+    </section>
+
+    <script src="js/signin.js" type="module"></script>
+</body>
+
+</html>
