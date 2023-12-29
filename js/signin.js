@@ -28,7 +28,7 @@ const validationUserName = ()=> {
     }
 }
 const validationUserEmail = ()=> {
-    const regex = /^((?=.*\d*)(?=.*[a-zA-Z])(?=.*\W*).+)@.+\.com$/gm;
+    const regex = /^[^0-9\W](.*)@[\w-]+(\.com)+$/gm;
     if (regex.test(userEmail.value)) {
         return true;
     } else {
