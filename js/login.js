@@ -17,6 +17,7 @@ const clearInputs = ()=> {
 window.addEventListener("load", ()=> {
     if (localStorage.getItem("logged-user")) {
         window.open("http://127.0.0.1:5500/profile.html");
+        window.close("http://127.0.0.1:5500/index.html");
     }
 })
 
